@@ -18,6 +18,9 @@ export class UsersService {
   }
 
   findOne(id: number) {
+    if (!id) {
+      throw new BadRequestException('No signed in user');
+    }
     if (id < 0) {
       throw new BadRequestException('ID shoud be mire than 0');
     }
