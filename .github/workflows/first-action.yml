@@ -5,6 +5,8 @@ jobs:
     runs-on: macos-13
     steps:
       - name: Print Hello
-        run: echo "Hello!"
+        run:  |
+          echo "Hello!"
+          echo "Awesome"
       - name: Print Bye
         run: echo "Bye!"
