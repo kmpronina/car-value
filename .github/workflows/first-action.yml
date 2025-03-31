@@ -2,7 +2,7 @@ name: First Workflow
 on: workflow_dispatch
 jobs: 
   fisrt_job: 
-    runs_on: macos-13
+    runs-on: macos-13
     steps:
       - name: Print Hello
         run: echo "Hello!"
